@@ -1,7 +1,7 @@
 'use strict';
 
 const accountSid = "xx"
-const authToken = "xx"
+const authToken = "xxxxx"
 
 var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
