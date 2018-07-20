@@ -1,4 +1,4 @@
-service: cordless-idiophone
+service: cordless-phone
 
 provider:
   name: aws

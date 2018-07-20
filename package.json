@@ -1,5 +1,5 @@
 {
-    "name": "cordless-idiophone",
+    "name": "cordless-phone",
     "version": "1.0.0",
     "description": "Twilio sandbox implemented in Serverless framework",
     "main": "index.js",
