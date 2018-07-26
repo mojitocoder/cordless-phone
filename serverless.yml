@@ -3,10 +3,16 @@ service: cordless-phone
 provider:
   name: aws
   runtime: nodejs8.10
+  stage: dev
+  region: eu-west-2
+
+  environment:
+    account_sid: ${ssm:/cordless-phone/account-sid~true}
+    auth_token: ${ssm:/cordless-phone/auth-token~true}
+    from_number: ${ssm:/cordless-phone/from_number}
+
 
 # you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
