@@ -20,7 +20,7 @@ module.exports.hello = async (event, context) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'SMS Id: ' + message.Id,
+      message: "Message '" + text + "' has been sent to " + toNumber,
       input: event,
     }),
   };
