@@ -24,3 +24,15 @@ functions:
       - http:
           path: /token
           method: get
+  dial:
+    handler: handler.dial
+    events:
+      - http:
+          path: /commands/dial
+          method: post
+  hangup:
+    handler: handler.hangup
+    events:
+      - http:
+          path: /commands/hangup
+          method: post
